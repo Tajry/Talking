@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.header {
+    padding: 20px;
+    background: rgb(242, 254, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+nav input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+nav button {
+    background: none;
+    border:none;
+    padding: 0px 5px;
+}
+nav input:focus {
+    outline: none;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   
+
+}
+nav ul li {
+    margin: 0px 10px;
+    list-style: none;
+
+}
+nav ul li  a {
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+
+}
+nav ul li  a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.way{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
+    color: rgb(179, 178, 178);
+}
+.way a {
+    margin: 0 10px;
+    background: rgb(242, 254, 69);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgb(179, 178, 178);
+}
+.content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* min-height: 100vh;   */
+    padding: 20px;
+    
+}
+.content #date{
+    color: rgb(122, 121, 121);
+}
+.content .comment {
+    margin: 10px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    width: 100%;
+    
+}
+.content .comment .cm_header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+    border-bottom: 1px solid rgb(0, 0, 5 );
+    
+}
+
+.content .comment .cm_content {
+    padding: 5px;
+    min-height: 120px;
+}
+.content .comment .cm_footer {
+    display: flex;
+    justify-content: space-between;
+}
+.content .comment .cm_footer a {
+    padding: 5px 10px;
+    text-decoration: none;
+    background: rgb(242, 254, 69);
+    color: #000;
+    border-radius: 2px;
+    border-radius: 5px;
+}
+.content .comment .cm_footer #del {
+    padding: 5px 10px;
+    text-decoration: none;
+    background: rgb(250, 88, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+
+    
+}
+.content .comment .cm_footer #edit {
+    padding: 5px 10px;
+    text-decoration: none;
+    background: rgb(4, 196, 255);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    border-radius: 5px;
+
+    
+}
+.content .comment .cm_footer a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background: rgb(100, 98, 98);
+    padding: 50px 20px;
+    /* min-height: 500px; */
+}
+footer .items {
+    padding: 10px;
+    color: #fff;
+
+}
+
+.answer {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    
+}
+.answer textarea {
+    width: 100%;
+    padding: 5px;
+    
+}
+
+.answer button {
+    background: rgb(242, 254, 69);
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+.write {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 100vh;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+
+} 
+
+.write .form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.write .form-control input {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    padding: 5px;
+}
+.write .form-control textarea:focus {
+    padding: 5px;
+    font-size: 16px;
+
+    
+}
+.write .form-control textarea:focus {
+    outline: none;
+    
+}
+
+.write .form-control input:focus {
+    outline: none;
+}
+.write .form-control button {
+    padding: 10px;
+    background: rgb(242, 254, 69);
+    border:none;
+
+}
+.write .form-control button:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+.profile {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.profile .box {
+    padding: 5px;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    max-height: 80vh;
+}
+.profile .box ul li{
+    list-style: none;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+   
+   
+}
+.profile .box ul li img{
+    width: 80px;
+    border-radius: 50px;
+}
